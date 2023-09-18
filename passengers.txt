@@ -1,1 +1,4 @@
 Regine		18	Manila		1A
+Gia		23	Bulacan		2A
+Fey		34	Manila		3A
+Mira		12	Manila		2A

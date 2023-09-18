@@ -28,7 +28,7 @@ void listOfPassengers()
 {
     printf("==============================================================\n");
     system("cls || clear");
-    printf("\t\t\t\t   RS Airline Reservation System\n");
+    printf("\tRS Airline Reservation System\n");
     printf("==============================================================\n");
 
     FILE *fp = fopen("passengers.txt", "rt");
@@ -70,7 +70,7 @@ void cancelReservation()
     printf("\tRS Airline Reservation System\n");
     printf("=============================================\n");
 
-    printf("\n\t\t\t CANCEL RESERVATION\n\n");
+    printf("\n\tCANCEL RESERVATION\n\n");
     passengerInfo cancel;
     
     printf("Enter name\n");
@@ -135,7 +135,7 @@ void changeSeatNum()
 {
     system("cls || clear");
     printf("=============================================\n");
-    printf("\t\tRS Airline Reservation System\n");
+    printf("\tRS Airline Reservation System\n");
     printf("=============================================\n");
 
     printf("\n\t\t\tCHANGING SEAT NUMBER\n\n");
@@ -241,7 +241,7 @@ void availableSeats()
         seats[row][col] = 'X';  
     }
 
-    printf("\t\t\t   AVAILABLE SEATS\n\n");
+    printf("\t\tAVAILABLE SEATS\n\n");
 
     for (i = 0; i < 5; i++) 
     {
@@ -274,12 +274,12 @@ void gettingPassengerInfo(const struct passengerSeat *seat)
     file = fopen("passengers.txt", "a");
     
     printf("=============================================\n");
-    printf("\t\tRS Airline Reservation System\n");
+    printf("\tRS Airline Reservation System\n");
     printf("=============================================\n\n");
 
     passengerInfo info;
 
-    printf("\t\tGETTING PASSENGER'S INFORMATION\n\n");
+    printf("GETTING PASSENGER'S INFORMATION\n\n");
 
 //Asking the client to input their information for reservation
     printf("Enter passenger's name\n");
@@ -295,10 +295,10 @@ void gettingPassengerInfo(const struct passengerSeat *seat)
 //checking if the information entered is correct
     system("cls || clear");
     printf("=============================================\n");
-    printf("\t\tRS Airline Reservation System\n");
+    printf("\tRS Airline Reservation System\n");
     printf("=============================================\n\n");
     
-    printf("\t\t\tPASSENGER'S INFORMATION\n\n");
+    printf("\tPASSENGER'S INFORMATION\n\n");
     printf("Name: %s\n", info.name);
     printf("Age: %d\n", info.age);
     printf("Address: %s\n", info.address);
@@ -340,7 +340,7 @@ void isSeatAvailable(const struct passengerSeat *seat)
 
     system("cls || clear");
     printf("=============================================\n");
-    printf("\t\tRS Airline Reservation System\n");
+    printf("\tRS Airline Reservation System\n");
     printf("=============================================\n\n");
 
     if(fp == NULL)
@@ -394,7 +394,7 @@ void addPassenger()
     
     system("cls || clear"); //clear the console
     printf("=============================================\n");
-    printf("\t\tRS Airline Reservation System\n");
+    printf("\tRS Airline Reservation System\n");
     printf("=============================================\n");
 
     printf("\n");
@@ -429,21 +429,21 @@ void mainMenu()
 
     system("cls || clear");
     printf("=============================================\n");
-    printf("\t\tRS Airline Reservation System\n");
+    printf("\tAirline Reservation System\n");
     printf("=============================================\n");
 
     printf("\n");
-    printf("\t\t\t\t MAIN MENU\n\n");
+    printf("\t\tMAIN MENU\n\n");
 
-    printf("\t\t\t[1] AVAILABLE SEATS\n");
-    printf("\t\t\t[2] ADD PASSENGER\n");
-    printf("\t\t\t[3] CHANGE SEAT NUMBER\n");
-    printf("\t\t\t[4] CANCEL RESERVATION\n");
-    printf("\t\t\t[5] LIST OF PASSENGERS\n");
-    printf("\t\t\t[6] EXIT\n");
+    printf("\t[1] AVAILABLE SEATS\n");
+    printf("\t[2] ADD PASSENGER\n");
+    printf("\t[3] CHANGE SEAT NUMBER\n");
+    printf("\t[4] CANCEL RESERVATION\n");
+    printf("\t[5] LIST OF PASSENGERS\n");
+    printf("\t[6] EXIT\n");
 
     printf("\n");
-    printf("\t\t\t>> ");
+    printf("\t>> ");
     scanf("%d", &choice);
 
 //check the user input in the menu
@@ -452,7 +452,7 @@ void mainMenu()
         case 1:
             system("cls || clear");
             printf("=============================================\n");
-            printf("\t\tRS Airline Reservation System\n");
+            printf("\tRS Airline Reservation System\n");
             printf("=============================================\n\n");
             availableSeats();
             break;
@@ -483,12 +483,12 @@ int main(void) {
     char inputPassword[15];
 
     printf("=============================================\n");
-    printf("\t\tRS Airline Reservation System\n");
+    printf("\tRS Airline Reservation System\n");
     printf("=============================================\n");
 
     //Log In to the System
     printf("\n");
-    printf("\t\t\t\tSystem Log In\n\n");
+    printf("\t\tSystem Log In\n\n");
 
     printf("Username\n");
     printf(">> ");
@@ -511,7 +511,7 @@ int main(void) {
         system("cls || clear");
         printf("\nSorry! Incorrect username and password\n");
         exit(1);
-    }*/
-
+    }
+*/
     mainMenu();
 }   
