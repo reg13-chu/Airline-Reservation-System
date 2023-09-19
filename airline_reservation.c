@@ -478,7 +478,7 @@ void mainMenu()
 }   
     
 int main(void) {
-/*
+
     char inputUsername[15];
     char inputPassword[15];
 
@@ -512,6 +512,6 @@ int main(void) {
         printf("\nSorry! Incorrect username and password\n");
         exit(1);
     }
-*/
+
     mainMenu();
 }   
